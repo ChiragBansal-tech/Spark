@@ -11,6 +11,10 @@ const routes = [
     {
         path: Routes.DASHBOARD,
         element: <Dashboard />
+    },
+    {
+        path: "*", 
+        element: <Navigate to={Routes.DASHBOARD} replace />
     }
 ]
 
