@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="">
                     <Button icon={<IoMdArrowRoundBack className="w-5 h-5" />} />
                 </div>
-                <h2 className="text-xl md:text-4xl text-black font-semibold capitalize leading-none">
+                <h2 className="text-xl md:text-4xl text-black roboto-600  capitalize leading-none">
                     {title}
                 </h2>
             </div>

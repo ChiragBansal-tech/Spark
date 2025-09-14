@@ -52,7 +52,7 @@ const InvoiceSection = () => {
                     </div>
                 </div>
 
-                <h2 className="text-2xl font-bold bg-gradient-to-br from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-transparent bg-clip-text mb-2">
+                <h2 className="text-2xl roboto-700 bg-gradient-to-br from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-transparent bg-clip-text mb-2">
                     Create New Invoice
                 </h2>
                 <p className="text-gray-600 mb-4">Start by creating and sending new invoice</p>

@@ -90,7 +90,7 @@ const IncomeTrend = () => {
 
     return (
         <div className="bg-white border-2 border-[#F2F2F2] shadow rounded-2xl p-2 md:p-4">
-            <h2 className="text-sm md:text-lg font-medium md:font-semibold text-[#999999] ">Income Trend</h2>
+            <h2 className="text-sm md:text-lg roboto-500 md:roboto-600 text-[#999999] ">Income Trend</h2>
             <p className="text-sm md:text-base text-[#6B7280] mb-4">
                 Your monthly income and growth for the last 6 months.
             </p>

@@ -26,7 +26,7 @@ const InvoiceListSection = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => setOpen(!open)}
             >
-                <h2 className="text-sm md:text-lg font-medium md:font-semibold text-[#999999] ">Your Invoices</h2>
+                <h2 className="text-sm md:text-lg roboto-500 md:roboto-600 text-[#999999] ">Your Invoices</h2>
                 {open ? <BiChevronUp size={20} /> : <BiChevronDown size={20} />}
             </div>
 

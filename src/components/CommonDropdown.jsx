@@ -28,7 +28,7 @@ const CommonDropdown = ({ options }) => {
     return (
         <div className="relative inline-block" ref={dropdownRef}>
             <div
-                className={`flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium cursor-pointer ${selected.color}`}
+                className={`flex items-center gap-2 px-3 py-2 rounded-full text-sm roboto-500 cursor-pointer ${selected.color}`}
                 onClick={() => setOpen(!open)}
             >
                 {selected.icon}

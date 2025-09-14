@@ -73,7 +73,7 @@ const FinanceSection = () => {
         <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-2 border-2 shadow border-[#F2F2F2] rounded-2xl px-3 py-4">
                 <div className="flex justify-between items-center">
-                    <p className="text-sm md:text-lg font-medium md:font-semibold text-[#999999] ">
+                    <p className="text-sm md:text-lg roboto-500 md:roboto-600 text-[#999999] ">
                         Time Period
                     </p>
                     <span className="text-gray-400 text-sm">
@@ -97,7 +97,7 @@ const FinanceSection = () => {
                             }}
                             className={`px-4 py-2 rounded-full cursor-pointer text-sm flex items-center gap-2 transition-colors
                                 ${active === opt.value
-                                    ? "bg-gray-100 border border-[#F3E8FF] bg-gradient-to-r from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-transparent bg-clip-text font-medium"
+                                    ? "bg-gray-100 border border-[#F3E8FF] bg-gradient-to-r from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-transparent bg-clip-text roboto-500"
                                     : "bg-gray-100 text-[#999999] border border-transparent"
                                 }`}
                         >

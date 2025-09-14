@@ -15,7 +15,7 @@ const CreateInvoice = ({ onClose }) => {
             <div className='bg-gray-100 p-8 rounded-xl'>
 
                 <div className="flex justify-between items-start">
-                    <h1 className="text-xl text-black font-semibold">Create Invoice</h1>
+                    <h1 className="text-xl text-black roboto-600">Create Invoice</h1>
 
                 </div>
 

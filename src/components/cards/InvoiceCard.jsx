@@ -26,7 +26,7 @@ const InvoiceCard = ({ invoice }) => {
     return (
         <div className="flex justify-between items-center bg-white border-2 border-[#F2F2F2] rounded-lg p-3 mb-3 shadow">
             <div>
-                <p className="font-medium text-sm md:text-base text-[#6B7280]">{invoice.client}</p>
+                <p className="roboto-500 text-sm md:text-base text-[#6B7280]">{invoice.client}</p>
                 <p className="text-xs md:text-sm text-[#999999]">
                     {invoice.amount}, Due: {invoice.due}
                 </p>
@@ -36,7 +36,7 @@ const InvoiceCard = ({ invoice }) => {
                 <CommonDropdown options={options} />
             ) : (
                 <span
-                    className={`px-2 md:px-4 py-2 rounded-full text-xs md:text-base font-medium flex items-center gap-1 ${statusStyles[invoice.status]}`}
+                    className={`px-2 md:px-4 py-2 rounded-full text-xs md:text-base roboto-500 flex items-center gap-1 ${statusStyles[invoice.status]}`}
                 >
                     {invoice.status === "Draft" && <BiPencil size={14} />}
                     {invoice.status === "Overdue" && <BiBell size={14} />}

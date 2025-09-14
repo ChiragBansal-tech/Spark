@@ -24,3 +24,28 @@
 .scrollbar-style::-webkit-scrollbar-thumb:hover {
   background-color: #E7CDE6;
 }
+
+.roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.roboto-600 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
