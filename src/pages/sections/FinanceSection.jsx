@@ -109,7 +109,7 @@ const FinanceSection = () => {
                     {active === "Custom" && showPicker && (
                         <div
                             ref={pickerRef}
-                            className="absolute right-38 top-14 p-3 bg-gray-200 rounded-2xl shadow-lg z-50"
+                            className="absolute right-0 md:right-38 top-14 p-3 bg-gray-200 rounded-2xl shadow-lg z-50"
                         >
                             <div className="flex flex-col gap-3">
                                 <DatePicker

@@ -21,6 +21,7 @@ const IncomeTrend = () => {
             type: "line",
             stacked: false,
             toolbar: { show: false },
+            zoom: { enabled: false },
         },
         stroke: {
             width: [0, 2],

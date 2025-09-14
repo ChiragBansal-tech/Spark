@@ -20,7 +20,7 @@ const Header = () => {
                 </h2>
             </div>
 
-            <div className="rounded-full w-10 h-10 md:w-15  md:h-15 overflow-hidden ">
+            <div className="rounded-full mr-4 md:mr-0 w-10 h-10 md:w-15  md:h-15 overflow-hidden ">
                 <img
                     src={profilePicture}
                     alt="profilePicture"
