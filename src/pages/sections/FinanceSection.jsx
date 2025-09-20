@@ -14,31 +14,38 @@ const FinanceSection = () => {
     const pickerRef = useRef(null);
 
     const options = [
-        { label: "1Month", value: "1Month" },
-        { label: "3Months", value: "3Months" },
+        { label: "1Month", value: "1Month", earnings: "20,000", awaited: "5,000", overdue: "2,000" },
+        { label: "3Months", value: "3Months", earnings: "50,000", awaited: "15,000", overdue: "7,000" },
         {
             label: "1Year",
             value: "1Year",
+            earnings: "70,000",
+            awaited: "20,000",
+            overdue: "10,000",
             icon: (
                 <div className="p-2 rounded-full bg-gradient-to-br from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-white text-sm">
                     <FaCrown />
                 </div>
-            )
+            ),
         },
         {
             label: "Custom",
             value: "Custom",
+            earnings: "0", // default, update when date range is applied
+            awaited: "0",
+            overdue: "0",
             icon: (
                 <div className="p-2 rounded-full bg-gradient-to-br from-[#DD2A7B] via-[#9747FF] to-[#334CCA] text-white text-sm">
                     <FaRegCalendarAlt />
                 </div>
-            )
+            ),
         },
     ];
 
+
     const formatDate = (date) => {
         if (!date) return "";
-        return date.toLocaleDateString("en-GB"); // dd/mm/yyyy
+        return date.toLocaleDateString("en-GB");
     };
 
     const handleShowResult = () => {
@@ -54,7 +61,8 @@ const FinanceSection = () => {
         setShowPicker(false);
     };
 
-    // Close on outside click
+    const activeOption = options.find((opt) => opt.value === active);
+
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (pickerRef.current && !pickerRef.current.contains(e.target)) {
@@ -145,10 +153,10 @@ const FinanceSection = () => {
                 </div>
             </div>
 
-            <FinanceCard label="Total Earnings" amount="1,25,000" />
+            <FinanceCard label="Total Earnings" amount={activeOption?.earnings || "0"} />
             <div className="grid grid-cols-2 gap-3">
-                <FinanceCard label="Payment Awaited" amount="25,000" />
-                <FinanceCard label="Payment Overdue" amount="25,000" />
+                <FinanceCard label="Payment Awaited" amount={activeOption?.awaited || "0"} />
+                <FinanceCard label="Payment Overdue" amount={activeOption?.overdue || "0"} />
             </div>
         </div>
     );

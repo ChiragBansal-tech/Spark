@@ -34,9 +34,8 @@ const ModalContainer = ({ show, onClose, children }) => {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    onClick={onClose} // Close when background clicked
+                    onClick={onClose} 
                 >
-                    {/* Background with fade & blur */}
                     <motion.div
                         className="absolute inset-0 bg-black/70 backdrop-blur-sm"
                         variants={backdrop}
